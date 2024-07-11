@@ -1,0 +1,9 @@
+{
+	"name": "jjsantiagoc-datafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "df00f9f6-e018-447f-af03-a923c9854b7d",
+		"tenantId": "11a4ecb9-71f6-449b-b8ce-a205e33439b3"
+	}
+}
