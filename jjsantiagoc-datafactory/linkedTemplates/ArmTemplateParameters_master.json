@@ -8,8 +8,20 @@
 		"LINK_ADLS_DATAFACTORY_accountKey": {
 			"value": ""
 		},
+		"AzureDatabricks_DataFatory_accessToken": {
+			"value": ""
+		},
+		"AzureDatabricks_DataFactory2_accessToken": {
+			"value": ""
+		},
 		"LINK_ADLS_DATAFACTORY_properties_typeProperties_url": {
 			"value": "https://jjsantiagoc295.dfs.core.windows.net/"
+		},
+		"AzureDatabricks_DataFatory_properties_typeProperties_existingClusterId": {
+			"value": "0713-165415-sj9u2jyp"
+		},
+		"AzureDatabricks_DataFactory2_properties_typeProperties_existingClusterId": {
+			"value": "0713-165415-sj9u2jyp"
 		},
 		"containerUri": {
 			"value": ""
