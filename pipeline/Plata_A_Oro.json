@@ -1,9 +1,9 @@
 {
-	"name": "Bronce_A_Plata",
+	"name": "Plata_A_Oro",
 	"properties": {
 		"activities": [
 			{
-				"name": "Bronce_a_Plata",
+				"name": "Plata_a_Oro",
 				"type": "DatabricksNotebook",
 				"dependsOn": [],
 				"policy": {
@@ -15,10 +15,10 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/juan_data_sc@hotmail.com/Capa Plata"
+					"notebookPath": "/Users/juan_data_sc@hotmail.com/Capa Oro"
 				},
 				"linkedServiceName": {
-					"referenceName": "AzureDatabricks_DataFatory",
+					"referenceName": "AzureDatabricks_DataFactory2",
 					"type": "LinkedServiceReference"
 				}
 			}

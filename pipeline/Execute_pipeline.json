@@ -1,0 +1,70 @@
+{
+	"name": "Execute_pipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute pipe_copyfiles",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "pip_copy_files",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			},
+			{
+				"name": "Execute Bronce_A_Plata",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "Execute pipe_copyfiles",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "Bronce_A_Plata",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			},
+			{
+				"name": "Execute Plata_A_Oro",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "Execute Bronce_A_Plata",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "Plata_A_Oro",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"annotations": []
+	}
+}
